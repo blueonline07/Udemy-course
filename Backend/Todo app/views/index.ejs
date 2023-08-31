@@ -1,0 +1,15 @@
+<%- include("./partials/header.ejs") %>
+<div class="container">
+    <form action="/submit" method="POST">
+        <input type="text" name="task">
+        <input type="submit" name="submit">
+    </form>
+    <% if(locals.tasks) {%>
+    <% for(var i=0; i< tasks.length; i++){ %>
+    <div class="tasks">
+        <input  type="checkbox" name="<%= tasks[i] %>">
+        <label  for="<%= tasks[i] %>"> <%= tasks[i] %></label>
+    </div>
+    <% }} %>
+</div>
+<%- include("./partials/footer.ejs") %>

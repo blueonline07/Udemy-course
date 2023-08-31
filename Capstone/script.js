@@ -1,0 +1,1 @@
+var nameA = document.querySelector(".welcome-title").innerHTML = "AAA";

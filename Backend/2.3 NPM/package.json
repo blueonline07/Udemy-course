@@ -1,0 +1,15 @@
+{
+  "name": "new-package",
+  "version": "1.0.0",
+  "description": "hahahah",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Me",
+  "license": "ISC",
+  "dependencies": {
+    "superheroes": "^3.0.0"
+  }
+}
