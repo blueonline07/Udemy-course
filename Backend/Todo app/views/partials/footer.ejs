@@ -1,4 +1,14 @@
 </main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+    var checkboxes = $("input[type=checkbox]");
+    checkboxes.click((event)=>{
+        $(`label[id=${event.target.id}]`).toggleClass("checked");
+    });
+    var sections = $("a")
+
+</script>
 </body>
-<footer>Copyright © 2023</footer>
+ 
+<footer>Copyright © <%= currentYear %></footer>
 </html>
