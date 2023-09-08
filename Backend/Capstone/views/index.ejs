@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/main.css" rel="stylesheet">
+    <title>Make your joke</title>
+</head>
+<body>
+    <h1>Joke of the day</h1>
+    <div class="result">
+        <p><%= content %></p>
+    </div>
+    <form action="/submit" method="post">
+        <input type="checkbox" name ="type" value="Programming">
+        <label for="Programming">Programming</label>
+        <input type="checkbox" name ="type" value="Dark">
+        <label for="Dark">Dark</label>
+        <input type="checkbox" name ="type" value="Miscellaneous">
+        <label for="Miscellaneous">Misc</label>
+        <input type="checkbox" name ="type" value="Pun">
+        <label for="Pun">Pun</label>
+        <input type="checkbox" name ="type" value="Spooky">
+        <label for="Spooky">Spooky</label>
+        <input type="checkbox" name ="type" value="Christmas">
+        <label for="Christmas">Christmas</label>
+        <input type="submit" name="submit">
+    </form>
+
+</body>
+</html>
